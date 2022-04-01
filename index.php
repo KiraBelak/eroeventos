@@ -7,18 +7,28 @@ $message='';
 if(!empty($_POST['username']) && !empty($_POST['pass'])){
   $sql="SELECT id,username,pass FROM usuario WHERE username=:username";
   $state =$conn->prepare($sql) ;
- $state->bindParam(':username',$_POST['username']);
+ $state->bindParam(':username', $_POST['username']);
  $state->execute();
  $results= $state->fetch(PDO::FETCH_ASSOC);
  $message='';
- if(count($results)> 0 && password_verify($_POST['pass'],$results['pass'])){
+ if(count($results) > 0 && $_POST['pass'] == $results['pass']){
  
  $_SESSION['usuario_id']= $results[ 'id'];
 
  $message= ' coincide credenciales';
+ { ?>
 
+  $ventana= <form  mame=forma action="login.php" method="post">
+  
+  <?php }
+ 
  }else{
    $message= 'no coincide credenciales';
+   { ?>
+
+    $ventana= <form  mame=forma action="#" method="post">
+    
+    <?php }
  }
 
 }
@@ -37,7 +47,9 @@ if(!empty($_POST['username']) && !empty($_POST['pass'])){
     <div class="login-box">
         <img src="ero.png" class="avatar" alt="Avatar Image">
         <h1>Entra!</h1>
-        <form action="#" method="post">
+        <?php $ventana?>
+       <form method="post">
+          
           <!-- USERNAME INPUT -->
           <?php
           if(!empty($message)) : ?>
