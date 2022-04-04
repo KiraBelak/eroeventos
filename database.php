@@ -1,7 +1,7 @@
 <?php
 $server = 'localhost';
 $username = 'root';
-$pass ='';
+$pass ='root';
 $databasee='eronew';
 try{
 $conn =new PDO("mysql:host=$server;dbname=$databasee",$username,$pass);

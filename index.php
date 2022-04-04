@@ -26,7 +26,7 @@ if(!empty($_POST['username']) && !empty($_POST['pass'])){
    $message= 'no coincide credenciales';
    { ?>
 
-    $ventana= <form  mame=forma action="#" method="post">
+    $ventana= <form  mame=forma action="login.php" method="post">
     
     <?php }
  }
