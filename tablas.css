@@ -1,5 +1,5 @@
 header{
-    width: 108%;
+    width: 105%;
     height: 60px;
     background-color: #17272F;
     margin-top: -8px;
@@ -18,15 +18,25 @@ header{
     
   }
 header a{
-    color: #fff;
+   padding-top: 50%;
+   color: #fff;
     padding-left: 40%;
 }
 
 body{
+   margin: 0;
+    padding: 0;
+    background: url(er9o.jpg) no-repeat center top;
+    background-size: cover;
+    font-family: sans-serif;
     
+    height: 100vh;
 }
 
 table {
+   font-size: xx-large;
+   color: #000000;
+   text-shadow: rgb(255, 255, 255) 0.1em 0.1em 0.2em;
     width: 100%;
     border: 1px solid #999;
     text-align: left;
