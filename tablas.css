@@ -1,0 +1,57 @@
+header{
+    width: 105%;
+    height: 60px;
+    background-color: #17272F;
+    margin-top: -8px;
+    margin-left: -8px;
+    margin-right:-8px ;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.avatar {
+    width: 70px;
+    height: 70px;
+    border-radius: 60%;
+    position: absolute;
+    top: 0px;
+    left: 5px;
+    
+  }
+header a{
+   padding-top: 50%;
+   color: #fff;
+    padding-left: 40%;
+}
+
+body{
+   margin: 0;
+    padding: 0;
+    background: url(er9o.jpg) no-repeat center top;
+    background-size: cover;
+    font-family: sans-serif;
+    
+    height: 100vh;
+}
+
+table {
+   font-size: xx-large;
+   color: #000000;
+   text-shadow: rgb(255, 255, 255) 0.1em 0.1em 0.2em;
+    width: 100%;
+    border: 1px solid #999;
+    text-align: left;
+    border-collapse: collapse;
+    margin: 0 0 1em 0;
+    caption-side: top;
+ }
+ caption, td, th {
+    padding: 0.3em;
+ }
+ th, td {
+    border-bottom: 1px solid #999;
+    width: 25%;
+ }
+ caption {
+    font-weight: bold;
+    font-style: italic;
+ }
