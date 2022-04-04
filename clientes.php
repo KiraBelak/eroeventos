@@ -1,6 +1,6 @@
  <!-- comienza el guardado de informacion en base de datos   -->
  <?php   
-$conn=mysqli_connect('localhost','root','','eronew',)
+$conn=mysqli_connect('localhost','root','root','eronew',)
 
 ?>
  <!-- termina el guardado de informacion en base de datos   -->
@@ -10,18 +10,19 @@ $conn=mysqli_connect('localhost','root','','eronew',)
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="tablas.css">
+
     <title>Document</title>
-    <style>
-       
-        table,th,td{
-           border: 1px solid  black;
-           border-collapse: collapse;
-        }
+    
     </style>
 </head>
+<header>
+<img src="ero.png" class="avatar" alt="Avatar Image">
+    <a>Clientes</a>
+</header>
 <body>
     
-    <table style="width: 100%;">
+    <table >
         <tr>
             <th>ID</th>
             <th>Nombre</th>
